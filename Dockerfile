@@ -23,7 +23,7 @@ FROM nginx:latest
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 # Expose port 80 to the outside world
-EXPOSE 80
+EXPOSE 9000
 
 # Start Nginx when the container starts
 CMD ["nginx", "-g", "daemon off;"]
