@@ -27,7 +27,7 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy the built Vue.js app from the build-stage container to the Nginx container
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
-# Expose port 80 to the outside world
+# Expose port 8080 to the outside world
 EXPOSE 8080
 
 # Start Nginx when the container starts
