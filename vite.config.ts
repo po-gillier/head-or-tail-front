@@ -8,7 +8,7 @@ import { server } from 'typescript'
 export default defineConfig({
   plugins: [vue()],
   server: {
-    port: 9000
+    port: 80
   },
   resolve: {
     alias: {
